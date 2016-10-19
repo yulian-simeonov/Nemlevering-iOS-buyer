@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Libertad-Bold.otf">
+            <string>Libertad-Bold</string>
+            <string>Libertad-Bold</string>
+        </mutableArray>
+        <mutableArray key="Libertad-Regular.otf">
+            <string>Libertad</string>
+            <string>Libertad</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentDetails">
+            <connections>
+                <outlet property="btnScanCard" destination="XHc-gj-gNo" id="iaW-he-O5H"/>
+                <outlet property="tblPaymentDetails" destination="a7b-sb-FsI" id="vKw-6U-rQI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login_backGround" translatesAutoresizingMaskIntoConstraints="NO" id="r1x-9W-ah4">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZVG-Aw-L1e">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="196"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m65-Yh-Rxj">
+                            <rect key="frame" x="97" y="17" width="133" height="75"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_n" translatesAutoresizingMaskIntoConstraints="NO" id="Svg-d2-x8b">
+                                    <rect key="frame" x="54" y="6" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="25" id="G6f-TB-n7D"/>
+                                        <constraint firstAttribute="height" constant="25" id="TyX-fG-kxh"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NemLevering" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAW-mf-YyW">
+                                    <rect key="frame" x="16" y="37" width="102" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="102" id="JIC-1q-t1w"/>
+                                        <constraint firstAttribute="height" constant="21" id="iUm-o5-EHg"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Libertad-Bold" family="Libertad" pointSize="13"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Svg-d2-x8b" firstAttribute="top" secondItem="m65-Yh-Rxj" secondAttribute="top" constant="6" id="6zN-i3-peL"/>
+                                <constraint firstAttribute="width" constant="133" id="Kwr-EG-mit"/>
+                                <constraint firstAttribute="height" constant="75" id="OYz-kS-qsg"/>
+                                <constraint firstItem="Svg-d2-x8b" firstAttribute="centerX" secondItem="m65-Yh-Rxj" secondAttribute="centerX" id="f5u-ja-D5U"/>
+                                <constraint firstItem="cAW-mf-YyW" firstAttribute="centerX" secondItem="m65-Yh-Rxj" secondAttribute="centerX" id="hHP-2x-9Rz"/>
+                                <constraint firstItem="cAW-mf-YyW" firstAttribute="top" secondItem="Svg-d2-x8b" secondAttribute="bottom" constant="6" id="yDw-wE-sj6"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="m65-Yh-Rxj" firstAttribute="centerX" secondItem="ZVG-Aw-L1e" secondAttribute="centerX" constant="3.5" id="SQd-X9-Gpz"/>
+                        <constraint firstItem="m65-Yh-Rxj" firstAttribute="top" secondItem="ZVG-Aw-L1e" secondAttribute="top" constant="17" id="VfC-xk-oSW"/>
+                        <constraint firstAttribute="height" constant="196" id="l09-xg-ELn"/>
+                    </constraints>
+                </view>
+                <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHc-gj-gNo">
+                    <rect key="frame" x="30" y="209" width="260" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="UrF-9I-hf1"/>
+                        <constraint firstAttribute="width" constant="260" id="kiv-lw-fbR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Libertad-Bold" family="Libertad" pointSize="15"/>
+                    <state key="normal" title="tilføj din betalingsoplysninger" backgroundImage="CardScean">
+                        <color key="titleColor" red="0.83313563479999997" green="0.064834742530000003" blue="0.088330732189999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="actionScanCard:" destination="-1" eventType="touchUpInside" id="72E-jX-gXv"/>
+                    </connections>
+                </button>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" rowHeight="52" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="a7b-sb-FsI">
+                    <rect key="frame" x="30" y="280" width="260" height="99"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="99" id="AMN-WW-SmD"/>
+                        <constraint firstAttribute="width" constant="260" id="LNq-hp-e9X"/>
+                    </constraints>
+                    <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="fek-M0-vDc"/>
+                        <outlet property="delegate" destination="-1" id="g9J-GF-49E"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrM-nW-VFp">
+                    <rect key="frame" x="38" y="479" width="111" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="mhq-mT-O0Z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Libertad" family="Libertad" pointSize="16"/>
+                    <state key="normal" title="TILBAGE" backgroundImage="registerNext">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnBackPressed:" destination="-1" eventType="touchUpInside" id="m14-1h-6fU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ar5-sO-Th7">
+                    <rect key="frame" x="174" y="479" width="111" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="B4h-BG-suX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Libertad" family="Libertad" pointSize="16"/>
+                    <state key="normal" title="NÆSTE" backgroundImage="registerNext">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnDonePressed:" destination="-1" eventType="touchUpInside" id="Qv5-HB-nGR"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProcessThree" translatesAutoresizingMaskIntoConstraints="NO" id="Gmw-hM-IdD">
+                    <rect key="frame" x="0.0" y="558" width="320" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="X1Z-1u-YyK"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="DrM-nW-VFp" firstAttribute="top" secondItem="a7b-sb-FsI" secondAttribute="bottom" constant="100" id="0la-fA-2eP"/>
+                <constraint firstItem="XHc-gj-gNo" firstAttribute="top" secondItem="ZVG-Aw-L1e" secondAttribute="bottom" constant="13" id="17t-WZ-9uC"/>
+                <constraint firstAttribute="trailing" secondItem="ar5-sO-Th7" secondAttribute="trailing" constant="35" id="56o-3o-n8L"/>
+                <constraint firstItem="DrM-nW-VFp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="38" id="5Sg-Vs-mNR"/>
+                <constraint firstItem="ZVG-Aw-L1e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="60c-TB-chf"/>
+                <constraint firstAttribute="trailing" secondItem="ZVG-Aw-L1e" secondAttribute="trailing" id="ABU-dT-MR9"/>
+                <constraint firstItem="a7b-sb-FsI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="CUC-Xt-F5Q"/>
+                <constraint firstItem="ar5-sO-Th7" firstAttribute="top" secondItem="DrM-nW-VFp" secondAttribute="top" id="Eiu-qz-tQG"/>
+                <constraint firstAttribute="trailing" secondItem="Gmw-hM-IdD" secondAttribute="trailing" id="KFt-cu-FR5"/>
+                <constraint firstItem="r1x-9W-ah4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LYi-bh-1Iz"/>
+                <constraint firstAttribute="bottom" secondItem="Gmw-hM-IdD" secondAttribute="bottom" id="N7c-mp-thC"/>
+                <constraint firstAttribute="bottom" secondItem="r1x-9W-ah4" secondAttribute="bottom" id="StS-7z-3Ro"/>
+                <constraint firstItem="ZVG-Aw-L1e" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="auj-d1-zPS"/>
+                <constraint firstItem="Gmw-hM-IdD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="egv-2t-W9e"/>
+                <constraint firstItem="a7b-sb-FsI" firstAttribute="top" secondItem="XHc-gj-gNo" secondAttribute="bottom" constant="21" id="hdN-fy-Ymt"/>
+                <constraint firstItem="XHc-gj-gNo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iQv-hv-hPb"/>
+                <constraint firstItem="r1x-9W-ah4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="roM-Qi-LqY"/>
+                <constraint firstAttribute="trailing" secondItem="r1x-9W-ah4" secondAttribute="trailing" id="v0r-OQ-IDb"/>
+                <constraint firstItem="a7b-sb-FsI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yKg-ZL-3ot"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="254" y="80"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CardScean" width="228" height="41"/>
+        <image name="Login_backGround" width="320" height="568"/>
+        <image name="ProcessThree" width="320" height="14"/>
+        <image name="logo_n" width="25" height="25"/>
+        <image name="registerNext" width="111" height="39"/>
+    </resources>
+</document>

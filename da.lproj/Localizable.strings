@@ -1,0 +1,281 @@
+/* 
+  local.strings
+  Taxi App
+
+  Created by TechnoMac  6 on 12/05/16.
+  Copyright © 2016 Technostacks Infotech Pvt. Ltd. All rights reserved.
+*/
+
+
+"alrt_comtitle"="Hvordan var din oplevelse?";
+
+"alrt_comtext"="Denne feedback vil ikke blive delt med transportøren";
+
+"btn_Skip"="Gå videre";
+
+"alrt_Accept"= "Din anmodning blev accepteret";
+
+"alrt_Arrived"="Din chauffør er ankommet til afhentningsstedet";
+
+"lbl_serach" ="Søg";
+
+"alrt_Netc"="Vær venlig at tjekke din internetforbindelse";
+
+"lbl_BIKE" = "CYKELBUD";
+
+"lbl_BIKE_MESSANGER" = "CYKELBUD";
+
+"lbl_VAN" = "VAREVOGN";
+
+"lbl_BERLINGO" = "BERLINGO";
+
+"lbl_BOK_TRUCK" = "KASSEVOGN";
+
+"lbl_FLATBED" = "LADVOGN";
+
+"lbl_TOW_TRUCK" = "BJÆRGNINGSKØRETØJ";
+
+"lbl_MOBILE_CRANE" = "MOBILEKRAN";
+
+"lbl_DUMP_TRUCK" = "TIPVOGN";
+
+"lbl_GARBAGE_TRUCK" = "SKRALDEVOGN";
+
+"lbl_LOG_CARRIER" = "LASTBIL TIL TRÆ";
+
+"lbl_REFRIGERATED" = "KØLEVOGN";
+
+"lbl_TANK_TRUCK" = "TANKBIL";
+
+"lbl_TRUCK"= "LASTBIL";
+
+"lbl_LONG_HAUL" = "LASTBIL";
+
+"lbl_PICKUP" = "AFTHENTNING";
+
+"txt_title" = "Vælg køretøj";
+
+"txt_bookde" = "BOOK DIN LEVERING";
+
+"lbl_60KR" = "60 kr";
+
+"lbl_90KR" ="90 kr";
+
+"lbl_150KR"="150 kr";
+
+"lbl_250KR"="250 kr";
+
+"lbl_km" = "Max 25 kg";
+
+"lbl_reng" = "+ 10 kr pr. km";
+
+"btn_select" = "Vælg";
+
+"txt_sidelogt" = "Log ud";
+
+"txt_sidegtr" = "Få en Ride";
+
+"txt_sidercnt" = "Seneste";
+
+"txt_sidersrvtn" = "Reservationer";
+
+"txt_sidepmnt" = "Betaling";
+
+"txt_sidelf" = "Glemte sager";
+
+"txt_sideshresc" = "Del Socialt";
+
+"title_rcnttr" = "SENESTE TRIPS";
+
+"alert_pop"="Venter bekræftelse fra en ledig transportør";
+
+"msg_social" = "Jeg bruger Taxi app til at rejse gennem byen med lethed . \n Download app her: ";
+
+"txt_lf" = "TABT OG FUNDET";
+
+"alrt_rcnttrph" = "Din tur historie ikke får nu . Prøv efter nogen tid.";
+
+"title_trip" = "RAPPORT";
+
+"text_trpd" = "Dato for levering";
+
+"txt_drname" = "Chaufførs navn";
+
+"txt_lostitm" = "Lost sager";
+
+"txt_founditem" = "Fundne sager";
+
+"txt_desc" = "Beskrivelse";
+
+"title_lostreport" = "Rapport om forsvundende sager";
+
+"title_foundrp" = "Rapport om fundne sager";
+
+"alrt_rpsave" = "Din rapport ikke gemt . Prøv efter nogen tid.";
+
+"title_rsdate" = "VÆLG RESERVATIONSDATO";
+
+"title_setpk" = "Sæt Afthentning";
+
+"alrt_bkd" = "Du har succesfuldt booket din tur. Vi kontakter dig snarest.";
+
+"alrt_bkderr" = "Vi kan ikke registrere din levering, vær venlig at prøve igen senere.";
+
+"title_dest" = "Sæt Destination";
+
+"title_bk" = "BOG";
+
+"title_pr" = "Profil";
+
+"btn_edit" = "REDIGER";
+
+"alert_profedit" = "Din profil er blevet redigeret";
+
+"txt_compl" = "FULDFØRT";
+
+"txt_cancel" = "ANULLERET";
+
+"alrt_reqsent" = "Anmodning er sendt.";
+
+"alrt_reqnotsent" = "Anmodningen blev ikke sendt.";
+
+"alrt_un" = "Vi kan ikke hente information, vær venlig at prøve igen senere.";
+
+"btn_sign" = "LOG IND";
+
+"btn_reg" = "REGISTRER";
+
+"C77-C5-8Og.normalTitle" = "LOG IND";
+
+"mZf-cR-D4c.normalTitle" = "REGISTRER";
+
+"alert_connectionlost" = "Vær venlig at tjekke din internetforbindelse";
+
+"placeholder_email" = "navn@eksempel.dk";
+
+"placeholder_mono" = "Mobilnummer";
+
+"placeholde_pwd" = "Minimum 5 tegn";
+
+"btn_cancel" = "ANULLÉR";
+
+"btn_next" = "NÆSTE";
+
+"alert_tryagin"="Prøv igen"; //new add
+
+"alert_talk"="Tale med os";// new add
+
+"alert_nodriver" = "Ingen ledige chauffører"; //new add
+
+"alert_neardr" = "Vi beklager ulejligheden."; //new add
+
+
+"alert_try" = "prøv igen senere.";
+
+"splash_title" = "OPRET EN KONTO";
+
+"splash_signtitle" = "SIGN IN";
+
+"splash_regntitle" = "REGISTRER";
+
+"txt_email" = "Email";
+
+"txt_Mobile"=  "Mobilnummer";
+
+"txt_pwd" = "Kodeord";
+
+"btn_save" = "GEM";
+
+"btn_ok" = "Ok";
+
+"reg_canalrt" = "CANCEL kontooprettelse";
+
+"reg_canalrtmsg" = "Er du sikker på, du vil annullere ? Dine oplysninger vil ikke blive gemt .";
+
+"btn_yes" = "JA";
+
+"reg_alrtemail" = "Indtast email.";
+
+"alet_validEmail" = "Indtast en gyldig emailadresse";
+
+"pass_reng" = "kodeord Minimum 5 tegn";
+
+"reg_alrtmono" = "Indtast mobilnummer.";
+
+"reg_alrtpwd" = "Indtast kodeord.";
+
+"crt_alrtmsg" = "E-mail allerede registreret hos os , skal du logge ind for at fortsætte ...";
+
+"alrt_srvererr" = "Vær venlig at prøve igen senere";
+
+"alrt_loginerr" = "Vær venlig at tjekke din login information.";
+
+"btn_back" = "TILBAGE";
+
+"btn_first" = "Første";
+
+"btn_last" = "Sidste";
+
+"txt_camera" = "Kamera";
+
+"txt_album" = "Album";
+
+"profile_txt" = "Opret en profil";
+
+"alrt_fname" = "Indtast fornavn.";
+
+"alrt_lname" = "Indtast efternavn.";
+
+"alert_democard" = "Til prøvning formål brugeren kan indtaste dummy data .";
+
+"alert_regalrdy" = "Du er har allerede en konto. Vær venlig at logge ind.";
+
+"alert_srvrerr" = "Der er problemer med severen, vær venlig at prøve igen senere";
+
+"alert_card" = "du skal indtaste dummy kreditkortoplysninger \ n Card No. 4111 1111 1111 1111 .";
+
+"txt_card" = "Kortnummer ";
+
+"txt_dd" = "MM/ÅÅ ";
+
+"txt_carsedan" = "SEDAN";
+
+"txt_carsuv" = "SUV";
+
+"txt_carLux" = "LUKSUS";
+
+"txt_carlimo" = "LIMO";
+
+"alert_neardr" = "Ikke fundet nogen nærmeste driver.";
+
+"alert_nodrvraccpt" = "Der er desværre ingen ledige chauffører i dit område. Vær venlig at prøve lidt senere.";
+
+"txt_prmcode" = "Promoveringskode ";
+
+"txt_nopromoappld" = "Der er ikke givet en promoveringskode";
+
+"txt_tripd" = "Varighed af tur";
+
+"txt_totalfar" = "Total pris";
+
+"txt_dicount" = "Rabat";
+
+"btn_titpin" = "Sæt knappenål";
+
+"txt_rating" = "Rating";
+
+"btn_reqdsh" = "Anmod om destination her";
+
+"btn_reseth" = "Anmodning reset rider her";
+
+"btn_pickh" = "Anmod om afhentning her";
+
+"txt_pickloc" = "            INDSTIL AFHENTNINGSSTED >";
+
+"alert_cmnt" = "Skriv kommentar herunder.";
+
+"alert_srvr" = "Vær venlig at prøve igen senere.";
+
+"alert_entpm" = "Indtast promoveringskode";
+
+"btn_alrtn" = "Ingen";

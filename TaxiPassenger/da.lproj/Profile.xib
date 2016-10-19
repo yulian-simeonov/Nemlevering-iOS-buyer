@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Profile">
+            <connections>
+                <outlet property="TableViewHight" destination="2jH-hJ-RYe" id="Ehs-pg-uRZ"/>
+                <outlet property="imgViewProfile" destination="Sqa-Fm-QHb" id="vLf-oE-v43"/>
+                <outlet property="tblViewAccount" destination="h2o-i0-GG4" id="kqK-8Q-qbv"/>
+                <outlet property="tblViewName" destination="Yk4-1R-XF8" id="G3x-uA-5BX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Yk4-1R-XF8">
+                    <rect key="frame" x="100" y="30" width="210" height="84"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="84" id="pNW-cJ-dK7"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="tuD-U6-ixQ"/>
+                        <outlet property="delegate" destination="-1" id="fnR-Yc-UeU"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="h2o-i0-GG4">
+                    <rect key="frame" x="10" y="160" width="300" height="132"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="132" id="2jH-hJ-RYe"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="YCz-8T-c14"/>
+                        <outlet property="delegate" destination="-1" id="ytd-Md-cSQ"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KONTO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9q-VK-iUk">
+                    <rect key="frame" x="10" y="135" width="100" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="E4p-6E-BEb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person-placeholder.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Sqa-Fm-QHb">
+                    <rect key="frame" x="10" y="30" width="84" height="84"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="84" id="cds-ys-rE3"/>
+                        <constraint firstAttribute="height" constant="84" id="kSD-GI-vOm"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="J9q-VK-iUk" firstAttribute="top" secondItem="Yk4-1R-XF8" secondAttribute="bottom" constant="21" id="2mr-sI-R8U"/>
+                <constraint firstItem="Yk4-1R-XF8" firstAttribute="leading" secondItem="Sqa-Fm-QHb" secondAttribute="trailing" constant="6" id="H2K-Gm-0Mw"/>
+                <constraint firstItem="J9q-VK-iUk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="OiE-89-WjM"/>
+                <constraint firstItem="Yk4-1R-XF8" firstAttribute="leading" secondItem="Sqa-Fm-QHb" secondAttribute="trailing" constant="6" id="RhP-K2-IZB"/>
+                <constraint firstItem="h2o-i0-GG4" firstAttribute="top" secondItem="J9q-VK-iUk" secondAttribute="bottom" constant="4" id="XTG-fn-oga"/>
+                <constraint firstAttribute="trailing" secondItem="h2o-i0-GG4" secondAttribute="trailing" constant="10" id="aWr-wP-VLn"/>
+                <constraint firstItem="h2o-i0-GG4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="iNd-Kw-uXH"/>
+                <constraint firstItem="Yk4-1R-XF8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="kYF-qr-mlW"/>
+                <constraint firstItem="Sqa-Fm-QHb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="sPo-CY-hy8"/>
+                <constraint firstAttribute="trailing" secondItem="Yk4-1R-XF8" secondAttribute="trailing" constant="10" id="vU3-ql-g0L"/>
+                <constraint firstItem="Sqa-Fm-QHb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="xkc-Ze-TiW"/>
+                <constraint firstAttribute="trailing" secondItem="J9q-VK-iUk" secondAttribute="trailing" constant="210" id="yvm-jm-rZr"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="311" y="-39"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="person-placeholder.jpg" width="500" height="500"/>
+    </resources>
+</document>

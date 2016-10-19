@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecentDetails">
+            <connections>
+                <outlet property="objMapView" destination="8up-3T-2Aq" id="RS8-yL-GHQ"/>
+                <outlet property="tblRecentDetail" destination="3lk-rH-Cyi" id="QJc-ie-24f"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewMapView" destination="g9b-iT-c3b" id="aAd-kG-QTM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g9b-iT-c3b">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8up-3T-2Aq" customClass="GMSMapView">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="320" id="3fl-x1-4qn"/>
+                        <constraint firstAttribute="bottom" secondItem="8up-3T-2Aq" secondAttribute="bottom" id="A2a-Bf-A0X"/>
+                        <constraint firstItem="8up-3T-2Aq" firstAttribute="leading" secondItem="g9b-iT-c3b" secondAttribute="leading" id="H24-th-tUD"/>
+                        <constraint firstItem="8up-3T-2Aq" firstAttribute="top" secondItem="g9b-iT-c3b" secondAttribute="top" id="aKj-MI-Z6Y"/>
+                        <constraint firstAttribute="trailing" secondItem="8up-3T-2Aq" secondAttribute="trailing" id="qQy-Mu-Jbn"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3lk-rH-Cyi">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="AsZ-fH-MeR"/>
+                        <outlet property="delegate" destination="-1" id="Pns-ep-WCz"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="g9b-iT-c3b" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6ga-Wn-S44"/>
+                <constraint firstAttribute="trailing" secondItem="3lk-rH-Cyi" secondAttribute="trailing" id="E3P-gi-d7G"/>
+                <constraint firstItem="3lk-rH-Cyi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Jsy-rR-7zi"/>
+                <constraint firstItem="3lk-rH-Cyi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RFc-y6-Rtu"/>
+                <constraint firstItem="g9b-iT-c3b" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bko-o3-Ac7"/>
+                <constraint firstAttribute="trailing" secondItem="g9b-iT-c3b" secondAttribute="trailing" id="mAg-ge-MSG"/>
+                <constraint firstAttribute="bottom" secondItem="3lk-rH-Cyi" secondAttribute="bottom" id="ujJ-Je-PMv"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="287" y="133"/>
+        </view>
+    </objects>
+</document>

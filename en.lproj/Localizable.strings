@@ -1,0 +1,283 @@
+/* 
+  local.strings
+  Taxi App
+
+  Created by TechnoMac  6 on 12/05/16.
+  Copyright © 2016 Technostacks Infotech Pvt. Ltd. All rights reserved.
+*/
+
+
+"btn_Skip"="Skip";
+
+"alrt_Netc"="Please Check Your Internet Connection";
+
+"alrt_Accept"= "Your delivery request was accepted";
+
+"alrt_Arrived"="Your FindCargo driver has arrived at the pickup location";
+
+"lbl_serach" = "Search";
+
+"lbl_BIKE" = "BIKE";
+
+"lbl_BERLINGO" = "BERLINGO";
+
+"lbl_BIKE_MESSANGER" ="BIKE MESSANGER";
+
+"lbl_VAN" = "VAN";
+
+"lbl_BOK_TRUCK" = "BOK TRUCK";
+
+"lbl_FLATBED" = "FLATBED";
+
+"lbl_TOW_TRUCK" = "TOW TRUCK";
+
+"lbl_MOBILE_CRANE" = "MOBILE CRANE";
+
+"lbl_DUMP_TRUCK" = "DUMP TRUCK";
+
+"lbl_GARBAGE_TRUCK" = "GARBAGE TRUCK";
+
+"lbl_LOG_CARRIER" = "LOG CARRIER";
+
+"lbl_REFRIGERATED" = "REFRIGERATED";
+
+"lbl_TANK_TRUCK" = "TANK TRUCK";
+
+"lbl_LONG_HAUL" = "LONG HAUL/TRACTORTRUCK";
+
+"lbl_PICKUP" = "PICKUP";
+
+"lbl_TRUCK" = "TRUCK";
+
+
+"txt_title" = "Select Vehicle";
+
+"txt_bookde" = "Book a Delivery";
+
+"lbl_60KR" = " 60Kr ";
+
+"lbl_90KR" ="90kr";
+
+"lbl_150KR"="150kr";
+
+"lbl_250KR"="250kr";
+
+"lbl_km" = "25 kg max";
+
+"lbl_reng" = "+10 kr per km";
+
+"alrt_comtitle"="How was your experience?";
+
+"alrt_comtext"="This feedback will not be shared with the driver";
+
+"txt_sidelogt" = "Log Out";
+
+"txt_sidegtr" = "Get a Ride";
+
+"txt_sidercnt" = "Recent Deliveries";
+
+"txt_sidersrvtn" = "Reservation";
+
+"txt_sidepmnt" = "Payment";
+
+"txt_sidelf" = "Lost & Found";
+
+"txt_sideshresc" = "Share Socially";
+
+"title_rcnttr" = "Recent Deliveries";
+
+"msg_social" = "I'm using Taxi app to travel through city with ease. \n Download the app here: ";
+
+"txt_lf" = "LOST AND FOUND";
+
+"alrt_rcnttrph" = "Your trip history not getting now. Please try after some time.";
+
+"title_trip" = "REPORT";
+
+"text_trpd" = "Trip Date";
+
+"txt_drname" = "Driver Name";
+
+"txt_lostitm" = "Lost Item";
+
+"txt_founditem" = "Found Item";
+
+"txt_desc" = "Description";
+
+"title_lostreport" = "LOST REPORT";
+
+"title_foundrp" = "FOUND REPORT";
+
+"alrt_rpsave" = "Your report not saved. Please try after some time.";
+
+"title_rsdate" = "SELECT RESERVATION DATE";
+
+"title_setpk" = "Set Pickup";
+
+"alrt_bkd" = "Your delivery was successfully booked. We will contact you soon.";
+
+"alrt_bkderr" = "We are not able to register your delivery, please try later";
+
+"title_dest" = "Set Destination";
+
+"title_bk" = "BOOK";
+
+"title_pr" = "PROFILE";
+
+"btn_edit" = "EDIT";
+
+"btn_book" = "Book";
+
+"alert_profedit" = "Profile edited successfully";
+
+"txt_compl" = "COMPLETED";
+
+"txt_cancel" = "CANCELED";
+
+"alrt_reqsent" = "Request sent successfully.";
+
+"alrt_reqnotsent" = "Request not sent successfully.";
+
+"alrt_un" = "We are unable to fetch details, please try again later.";
+
+"btn_sign" = "SIGN IN";
+
+"btn_reg" = "REGISTER";
+
+"C77-C5-8Og.normalTitle" = "SIGN IN";
+
+"mZf-cR-D4c.normalTitle" = "REGISTER";
+
+"btn_ok" = "OK";
+
+"reg_alrtemail" = "Please enter email.";
+
+"alet_validEmail" = "Please enter a valid email";
+
+"reg_alrtmono" = "Please enter mobile number";
+
+"reg_alrtpwd" = "Please enter password";
+
+"pass_reng" = "Please enter Password Minimum 5 character";
+
+"crt_alrtmsg" = "Email already registered with us, please login to continue...";
+
+"alrt_srvererr" = "Please try after some time.";
+
+"alrt_loginerr" = "Please check login details.";
+
+"btn_back" = "BACK";
+
+"btn_first" = "First";
+
+"btn_last" = "Last";
+
+"txt_camera" = "Camera";
+
+"txt_album" = "Album";
+
+"profile_txt" = "CREATE A PROFILE";
+
+"alrt_fname" = "Please enter first name.";
+
+"alrt_lname" = "Please enter last name";
+
+"alert_democard" = "Til prøvning formål brugeren kan indtaste dummy data .";
+
+"alert_regalrdy" = "You are already registered, please signin.";
+
+"alert_srvrerr" = "Server problem please try again later";
+
+"alert_card" = "you must enter dummy credit card details\n Card No. 4111 1111 1111 1111.";
+
+"txt_card" = "Card Number ";
+
+"txt_dd" = "MM/YY ";
+
+"txt_carsedan" = "SEDAN";
+
+"txt_carsuv" = "SUV";
+
+"txt_carLux" = "LUXURY";
+
+"txt_carlimo" = "LIMO";
+
+"alert_pop"="Waiting confirmation from an available carrier";
+
+"alert_tryagin"="Try Again";
+
+"alert_talk"="Talk to us";
+
+"alert_nodriver" = "No Drivers available";
+
+"alert_neardr" = "We are sorry for the inconvenience.";
+
+"alert_nodrvraccpt" = "No driver is currently available to take a request in your area. \nPlease try again after some time.";
+
+"txt_prmcode" = "Promo code ";
+
+"txt_nopromoappld" = "No promocode applied";
+
+"txt_tripd" = "Trip Duration";
+
+"txt_totalfar" = "Total Price";
+
+"txt_dicount" = "Discount";
+
+"btn_titpin" = "Set Pin";
+
+"txt_rating" = "Rating";
+
+"btn_reqdsh" = "Request destination here";
+
+"btn_reseth" = "Request reset ride here";
+
+"btn_pickh" = "Request pickup here";
+
+"txt_pickloc" = "SET PICKUP LOCATION >";
+
+"alert_pickloc" = "Please Select Pickup Location";
+
+"alert_Destilo" = "Please Select Destination Location";
+
+"btn_select" = "Select";
+
+"alert_cmnt" = "Please enter comment below";
+
+"alert_srvr" = "Please try later.";
+
+"alert_entpm" = "Please enter PromoCode.";
+
+"alert_connectionlost" = "Please Check Your Internet Connection";
+
+"placeholder_email" = "name@example.com";
+
+"placeholder_mono" = "Mobile";
+
+"placeholde_pwd" = "Min 5 characters";
+
+"btn_cancel" = "CANCEL";
+
+"btn_next" = "NEXT";
+
+"splash_title" = "CREATE AN ACCOUNT";
+
+"splash_signtitle" = "LOGIN";
+
+"splash_regntitle" = "REGISTER";
+
+"txt_email" = "Email";
+
+"txt_Mobile"=  "Mobile";
+
+"txt_pwd" = "Password";
+
+"btn_save" = "Save";
+
+"reg_canalrt" = "CANCEL ACCOUNT CREATION";
+
+"reg_canalrtmsg" = "Are you sure you want to cancel? Your information will not be saved.";
+
+"btn_yes" = "YES";
+
+"alert_try" = "Please try after some time";

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Libertad-Bold.otf">
+            <string>Libertad-Bold</string>
+            <string>Libertad-Bold</string>
+            <string>Libertad-Bold</string>
+            <string>Libertad-Bold</string>
+            <string>Libertad-Bold</string>
+            <string>Libertad-Bold</string>
+            <string>Libertad-Bold</string>
+        </mutableArray>
+        <mutableArray key="Libertad-Regular.otf">
+            <string>Libertad</string>
+            <string>Libertad</string>
+            <string>Libertad</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GetTaxi">
+            <connections>
+                <outlet property="btnBerlingo" destination="Duy-1U-VSN" id="k66-iP-tmL"/>
+                <outlet property="btnBike" destination="sPk-2r-nxw" id="SGU-hh-wqa"/>
+                <outlet property="btnBozTuck" destination="Uuv-cr-hSZ" id="hGf-hr-7qY"/>
+                <outlet property="btnDestinationAddress" destination="Bqo-h4-oiM" id="HqW-GR-XBK"/>
+                <outlet property="btnPickupAddress" destination="eyR-3U-DNf" id="V7U-PC-ho8"/>
+                <outlet property="btnVan" destination="gsT-Y5-egz" id="MjD-ZY-rwE"/>
+                <outlet property="imgViewCenterPin" destination="GKQ-Vh-0uJ" id="gpd-fR-NzA"/>
+                <outlet property="lblChange" destination="26z-qu-kGd" id="jR4-wK-OQb"/>
+                <outlet property="lblDestination" destination="jXn-8v-TMg" id="voo-eH-D9g"/>
+                <outlet property="lblPIckUp" destination="lWP-LX-mFZ" id="pFb-ra-ehk"/>
+                <outlet property="objMapView" destination="QZ1-p6-484" id="ITf-zr-UWC"/>
+                <outlet property="objbtnBook" destination="7Gp-IH-Lyf" id="Y7N-2r-CzS"/>
+                <outlet property="view" destination="iN0-l3-epB" id="qdP-P3-HFk"/>
+                <outlet property="viewInvoice" destination="H7b-zB-lWo" id="eqW-Bq-RBw"/>
+                <outlet property="viewSearchAddress" destination="Ppm-DL-aDl" id="rs8-cI-Cak"/>
+                <outlet property="viewTabbar" destination="Y44-Ay-8vB" id="Rb1-Pk-dBE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CurrentLocation" translatesAutoresizingMaskIntoConstraints="NO" id="GKQ-Vh-0uJ">
+                    <rect key="frame" x="408" y="503" width="63" height="76"/>
+                </imageView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sn-oI-Bhc">
+                    <rect key="frame" x="319" y="1077" width="129" height="30"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="Enter PromoCode">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0FH-sc-5Lo" userLabel="ViewPickupText">
+                    <rect key="frame" x="38" y="22" width="693" height="145"/>
+                    <subviews>
+                        <button clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyR-3U-DNf">
+                            <rect key="frame" x="0.0" y="0.0" width="693" height="70"/>
+                            <fontDescription key="fontDescription" name="Libertad-Bold" family="Libertad" pointSize="14"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <inset key="titleEdgeInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Sæt Afthentning" backgroundImage="Destination">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="actionPickupAddress:" destination="-1" eventType="touchUpInside" id="v0r-Hl-alP"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZ3-Ga-XdR">
+                            <rect key="frame" x="0.0" y="71" width="693" height="3"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqo-h4-oiM">
+                            <rect key="frame" x="0.0" y="73" width="693" height="72"/>
+                            <fontDescription key="fontDescription" name="Libertad-Bold" family="Libertad" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Sæt Destination" backgroundImage="Destination">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="actionDestinationAddress:" destination="-1" eventType="touchUpInside" id="CdG-28-T2G"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWP-LX-mFZ">
+                            <rect key="frame" x="180" y="11" width="445" height="52"/>
+                            <fontDescription key="fontDescription" name="Libertad" family="Libertad" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXn-8v-TMg">
+                            <rect key="frame" x="180" y="82" width="445" height="52"/>
+                            <fontDescription key="fontDescription" name="Libertad" family="Libertad" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Afthentning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14R-8r-nnu">
+                            <rect key="frame" x="8" y="9" width="152" height="52"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Destination" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9b-NY-NZo">
+                            <rect key="frame" x="8" y="82" width="152" height="52"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehJ-YY-KaF" userLabel="SET PICKUP LOCATION &gt;">
+                    <rect key="frame" x="285" y="1011" width="198" height="28"/>
+                    <color key="backgroundColor" red="0.043137254899999998" green="0.035294117649999998" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="            SET PICKUP LOCATION &gt;">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Gp-IH-Lyf">
+                    <rect key="frame" x="611" y="761" width="100" height="100"/>
+                    <color key="backgroundColor" red="0.83313563479999997" green="0.064834742530000003" blue="0.088330732189999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Libertad-Bold" family="Libertad" pointSize="20"/>
+                    <state key="normal" title="Book">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnBookPressed:" destination="-1" eventType="touchUpInside" id="8WV-yc-v9w"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U4l-wD-JqE">
+                    <rect key="frame" x="0.0" y="890" width="768" height="134"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPk-2r-nxw">
+                            <rect key="frame" x="73" y="0.0" width="90" height="55"/>
+                            <state key="normal" image="bike"/>
+                            <connections>
+                                <action selector="tabbtnPressed:" destination="-1" eventType="touchUpInside" id="OJ2-Ed-aVD"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="B CYKELBUD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26z-qu-kGd">
+                            <rect key="frame" x="57" y="48" width="122" height="20"/>
+                            <fontDescription key="fontDescription" name="Libertad-Bold" family="Libertad" pointSize="15"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Duy-1U-VSN">
+                            <rect key="frame" x="234" y="-1" width="90" height="55"/>
+                            <state key="normal" image="Berlingo"/>
+                            <connections>
+                                <action selector="tabbtnPressed:" destination="-1" eventType="touchUpInside" id="WDn-Hu-r9v"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uuv-cr-hSZ">
+                            <rect key="frame" x="556" y="0.0" width="90" height="55"/>
+                            <state key="normal" image="truck"/>
+                            <connections>
+                                <action selector="tabbtnPressed:" destination="-1" eventType="touchUpInside" id="exV-aL-O3n"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="KASSEVOGN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6z-lM-Yao">
+                            <rect key="frame" x="540" y="49" width="122" height="20"/>
+                            <fontDescription key="fontDescription" name="Libertad-Bold" family="Libertad" pointSize="15"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsT-Y5-egz">
+                            <rect key="frame" x="395" y="-1" width="90" height="55"/>
+                            <state key="normal" image="Van"/>
+                            <connections>
+                                <action selector="tabbtnPressed:" destination="-1" eventType="touchUpInside" id="LyP-wl-7ta"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VAREVOGN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbM-NY-2cG">
+                            <rect key="frame" x="379" y="48" width="122" height="20"/>
+                            <fontDescription key="fontDescription" name="Libertad-Bold" family="Libertad" pointSize="15"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="GI5-w3-jXm">
+                            <rect key="frame" x="664" y="15" width="90" height="53"/>
+                            <fontDescription key="fontDescription" name="Libertad" family="Libertad" pointSize="15"/>
+                            <state key="normal" title="  FLERE KØRETØJER">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="tabbtnPressed:" destination="-1" eventType="touchUpInside" id="K2A-Ni-5ho"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BERLINGO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sa-0q-B7g">
+                            <rect key="frame" x="218" y="48" width="122" height="20"/>
+                            <fontDescription key="fontDescription" name="Libertad-Bold" family="Libertad" pointSize="15"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y44-Ay-8vB">
+                    <rect key="frame" x="84" y="1045" width="600" height="600"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Line.png" translatesAutoresizingMaskIntoConstraints="NO" id="aJO-gm-GaJ">
+                            <rect key="frame" x="0.0" y="0.0" width="465" height="3"/>
+                        </imageView>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person-placeholder.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Esq-z0-AAy">
+                            <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
+                        </imageView>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Driver Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="331-c7-zyr">
+                            <rect key="frame" x="0.0" y="0.0" width="86" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gho-0r-om6">
+                            <rect key="frame" x="0.0" y="0.0" width="256" height="256"/>
+                            <state key="normal" image="Sedan.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aZ-AJ-i7U">
+                            <rect key="frame" x="0.0" y="0.0" width="141" height="30"/>
+                            <color key="backgroundColor" red="0.039215686270000001" green="0.035294117649999998" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Request pickup here">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldy-93-4JT">
+                    <rect key="frame" x="369" y="1337" width="30" height="16"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </label>
+                <view hidden="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ppm-DL-aDl">
+                    <rect key="frame" x="84" y="1045" width="600" height="600"/>
+                    <subviews>
+                        <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Enter pickup location" showsCancelButton="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49A-6p-Rn6">
+                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
+                            <color key="backgroundColor" red="0.30394616790000001" green="0.77665944340000004" blue="0.96299041969999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                            <scopeButtonTitles>
+                                <string>Title</string>
+                                <string>Title</string>
+                            </scopeButtonTitles>
+                        </searchBar>
+                        <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ugy-qL-6Ug">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H7b-zB-lWo">
+                    <rect key="frame" x="84" y="1045" width="100" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$25.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPi-1q-T4V">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="78"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="65"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="has been electronically paid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QfH-fl-0fv">
+                            <rect key="frame" x="0.0" y="97" width="600" height="18"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLZ-Ni-2dq">
+                            <rect key="frame" x="0.0" y="138" width="600" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPo-nw-qbf">
+                            <rect key="frame" x="0.0" y="178" width="600" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bs6-Qn-9Se">
+                            <rect key="frame" x="0.0" y="218" width="600" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNE-OC-Jsw">
+                            <rect key="frame" x="0.0" y="258" width="600" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ozh-0Y-PeK" customClass="EDStarRating">
+                            <rect key="frame" x="0.0" y="299" width="600" height="50"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rda-VX-drn">
+                            <rect key="frame" x="97" y="369" width="406" height="50"/>
+                            <color key="backgroundColor" red="0.0017486346890000001" green="0.84546396680000002" blue="0.0027130409939999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <state key="normal" title="Submit">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QZ1-p6-484" customClass="GMSMapView">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="876"/>
+                    <color key="backgroundColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+            <point key="canvasLocation" x="286" y="322"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Berlingo" width="35" height="20"/>
+        <image name="CurrentLocation" width="35" height="45"/>
+        <image name="Destination" width="290" height="40"/>
+        <image name="Line.png" width="465" height="3"/>
+        <image name="Sedan.png" width="256" height="256"/>
+        <image name="Van" width="35" height="20"/>
+        <image name="bike" width="35" height="20"/>
+        <image name="person-placeholder.jpg" width="500" height="500"/>
+        <image name="truck" width="35" height="20"/>
+    </resources>
+</document>

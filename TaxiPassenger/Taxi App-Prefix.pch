@@ -1,0 +1,50 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "AppDelegate.h"
+#import "MBProgressHUD.h"
+
+#define appdelegate ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+
+#define IS_IPHONE_4S ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone && [UIScreen mainScreen].bounds.size.height == 480)
+
+#define IS_IPHONE_5 ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone && [UIScreen mainScreen].bounds.size.height == 568)
+
+#define IS_IPHONE_6 ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone && [UIScreen mainScreen].bounds.size.height == 667)
+
+#define IS_IPHONE_6P ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone && [UIScreen mainScreen].bounds.size.height == 736)
+
+#define FirstName [[NSUserDefaults standardUserDefaults]valueForKey:@"Key_FirstName"]
+
+#define LastName [[NSUserDefaults standardUserDefaults]valueForKey:@"Key_LastName"]
+
+#define IPAD UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad
+
+//#define strBaseURL @"http://54.153.20.98/api/ios/"
+
+#define strBaseURL @"http://cargo.technostacks.com/ios/"//@"http://192.168.0.127/taxi_app2/ios/"
+
+//#define strBaseANURL @"http://54.153.20.98/api/android/"
+
+#define strBaseANURL @"http://cargo.technostacks.com/android/"//@"http://192.168.0.127/taxi_app2/android/"
+
+
+//#define strBrainBaseURL @"http://54.153.20.98/api/braintree/api/"
+
+#define strBrainBaseURL @"http://cargo.technostacks.com/braintree/api/"//@"http://192.168.0.127/taxi_app2/braintree/api/"
+
+
+#define appName @"nemlevering.dk"
+
+#endif

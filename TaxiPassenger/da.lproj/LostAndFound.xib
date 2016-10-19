@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LostAndFound">
+            <connections>
+                <outlet property="btnFound" destination="nXg-on-csx" id="LUx-6p-a49"/>
+                <outlet property="btnLost" destination="pfW-iK-gCr" id="g1B-tk-JAy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXg-on-csx">
+                    <rect key="frame" x="40" y="173" width="240" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="TQL-mW-ZiO"/>
+                    </constraints>
+                    <state key="normal" title="sager">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionFound:" destination="-1" eventType="touchUpInside" id="BsF-HG-7aJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfW-iK-gCr">
+                    <rect key="frame" x="40" y="99" width="240" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="acT-of-w65"/>
+                    </constraints>
+                    <state key="normal" title="Glemte">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionLost:" destination="-1" eventType="touchUpInside" id="w0y-AH-JJJ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pfW-iK-gCr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="99" id="B4F-nc-DyG"/>
+                <constraint firstAttribute="trailing" secondItem="nXg-on-csx" secondAttribute="trailing" constant="40" id="Eed-A4-oFy"/>
+                <constraint firstItem="pfW-iK-gCr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="FP1-G3-XsF"/>
+                <constraint firstItem="nXg-on-csx" firstAttribute="top" secondItem="pfW-iK-gCr" secondAttribute="bottom" constant="44" id="ZoQ-XX-C8V"/>
+                <constraint firstItem="nXg-on-csx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="e3S-U9-j5O"/>
+                <constraint firstAttribute="trailing" secondItem="pfW-iK-gCr" secondAttribute="trailing" constant="40" id="gAC-QY-o6i"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="243" y="56"/>
+        </view>
+    </objects>
+</document>
